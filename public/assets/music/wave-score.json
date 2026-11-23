@@ -1,0 +1,15 @@
+{
+  "ready": true,
+  "title": "Happy New Year",
+  "artist": "ABBA",
+  "status": "chill-o-dance-reorchestrated-v2",
+  "stems": {
+    "vocal": "/assets/music/wave-vocal-v2.mp3",
+    "relax": "/assets/music/wave-chill-v2.mp3",
+    "impulse": "/assets/music/wave-dance-v2.mp3"
+  },
+  "duration": 244.59003125,
+  "crossfadeCorrelation": 0,
+  "masterGain": 1,
+  "description": "Две новые аранжировки Controlla. Общий вокал Chill и монтаж Dance по тактам на единой сетке. Исходная фонограмма не используется."
+}
