@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17111d"><title>МегаФон. На своей волне</title>
+<meta name="description" content="Chill or Dance. Новый год на своей волне.">
+<link rel="icon" href="/assets/concept1/megafon-symbol.svg">
+<link rel="stylesheet" href="/wave-demo.css"><script type="module" src="/wave-demo.js"></script>
+</head>
+<body class="wave-demo">
+<main>
+<section class="wave-journey" id="top" data-demo="true" aria-label="Новый год на своей волне">
+<div class="journey-sticky">
+<canvas class="journey-canvas" aria-label="Прокрутите вниз: настроение, сборка студии, чтение или танец. Прокрутите вверх для обратного перехода."></canvas>
+<header class="demo-header"><img src="/assets/concept1/megafon-logo.svg" alt="МегаФон" width="156" height="30"><div class="demo-tools">
+<button id="motion" class="icon-control" aria-label="Приостановить движение" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><g class="pause-shape"><path d="M9 6v12M15 6v12"/></g><path class="play-shape" d="m9 6 9 6-9 6z"/></svg></button>
+<button id="sound" class="icon-control" data-audio-control aria-label="Включить звук" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/><g class="speaker-waves"><path d="M17 8c3 2 3 6 0 8M20 5c5 4 5 10 0 14"/></g><path class="speaker-cross" d="m17 9 5 6m0-6-5 6"/></svg></button>
+</div></header>
+<div class="journey-title"><p class="journey-kicker">НОВЫЙ ГОД</p><h1 class="sr-only">На своей волне</h1><div class="art-stack"><img src="/assets/concept1/kv-clean-relax.png" alt="На своей волне" fetchpriority="high"><img src="/assets/concept1/kv-clean-dance.png" alt="" aria-hidden="true"></div></div>
+<div class="journey-console"><div class="mood-labels"><button data-mood="0" aria-pressed="true">Chill</button><button data-mood="1" aria-pressed="false">Dance</button></div><div class="soft-slider"><div class="soft-rail" aria-hidden="true"><i></i></div><div class="soft-orb" aria-hidden="true"><video id="orbChill" muted loop playsinline preload="auto" poster="/assets/orb-chill.jpg" src="/assets/orb-chill.mp4"></video><span id="orbDance"><img src="/assets/orb-dance.png" alt=""></span></div><input id="mood" type="range" min="0" max="100" value="0" step="1" aria-label="Настроение: Chill или Dance"></div></div>
+<div class="scroll-cue" aria-hidden="true"><i></i></div>
+<div class="demo-chapters" aria-hidden="true"><i data-chapter="0"></i><i data-chapter="1"></i><i data-chapter="2"></i></div>
+<p id="scoreStatus" class="sr-only" role="status"></p><p class="journey-scene-copy sr-only" role="status"></p>
+</div>
+</section>
+</main>
+</body></html>
