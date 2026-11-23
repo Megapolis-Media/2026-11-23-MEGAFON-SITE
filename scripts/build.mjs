@@ -1,0 +1,10 @@
+import {cp,mkdir,readFile,access} from 'node:fs/promises';
+const html=await readFile('index.html','utf8');
+for(const m of html.matchAll(/(?:src|href)="(\/[^"#?]+)"/g))await access('public'+m[1]);
+const score=JSON.parse(await readFile('public/assets/music/wave-score.json','utf8'));
+for(const path of Object.values(score.stems))await access('public'+path);
+const cast=JSON.parse(await readFile('public/assets/journey-v5/cast.json','utf8'));
+for(const sheet of Object.values(cast))await access('public'+sheet.url);
+await mkdir('dist',{recursive:true});await cp('public','dist',{recursive:true});await cp('index.html','dist/index.html');
+await mkdir('dist/experience',{recursive:true});await cp('index.html','dist/experience/index.html');
+console.log('Built dist/: demo, shared scene modules, artwork, animation atlases and music.');
