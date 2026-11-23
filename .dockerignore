@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!package.json
+!index.html
+!scripts/
+!scripts/build.mjs
+!public/
+!public/**
+!docker/
+!docker/nginx.conf
